@@ -1,0 +1,155 @@
+@import url(https://db.onlinewebfonts.com/c/e261fa8ade22f4740803ed8d2d06eb43?family=Heligthon+Signature);
+
+body {
+    background-color: hsl(271, 54%, 70%);
+    overflow-x: hidden; /* Esconde o overflow horizontal */
+    margin: 0;
+}
+
+.imgfundo {
+    position: absolute;
+    top: 0px;
+}
+
+#fundofoto {
+    height: 738px;
+    width: 1045px;
+}
+
+.Katia {
+    color: black;
+    font-size: 100pt;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 20px;
+    left: 1120px;
+}
+
+.MP {
+    color: white;
+    font-size: 60px;
+    font-family: 'Heligthon Signature';
+    position: relative;
+    top: 0px;
+    left: 1075px;
+}
+
+.slider {
+    position: relative;
+    top: 10px;
+    left: 1180px;
+    overflow: hidden;
+    height: 330px;
+    width: 198px;
+}
+
+.slide {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    transform: translateX(0);
+}
+
+img {
+    object-fit: cover;
+    height: 312px;
+    width: 200px;
+}
+
+.agenda {
+    position: relative;
+    top: 10px;
+    left: 1185px;
+}
+
+.link-whatsapp {
+    position: relative;
+    top: 10px;
+    left: 1199px;
+    width: 185px;
+    height: 23px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 768px) {
+    .tudo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Katia {
+        top: 300px;
+        left: 0;
+        font-size: 14vw;
+        position: relative;
+        margin-bottom: 10px;
+        text-align: center;
+        display: block;
+    }
+
+    .MP {
+        top: 300px;
+        left: 0;
+        font-size: 8vw;
+        position: relative;
+        margin-bottom: 10px;
+        text-align: center;
+        display: block;
+    }
+
+    .slider {
+        top: 300px;
+        left: 0;
+        width: 90%;
+        max-width: 200px;
+        margin: 10px auto;
+        position: relative;   
+    }
+
+    .imgfundo {
+        display: block;
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    #fundofoto {
+        width: 100%;
+        height: auto;
+        max-height: 100vh;
+        display: block;
+        margin: 0 auto;
+        top: 0;
+    }
+
+    .agenda {
+        top: 290px;
+        left: 0;
+        position: relative;
+        margin-top: 10px;
+        text-align: center;
+        display: block;
+    }
+
+    .link-whatsapp {
+        top: 290px;
+        left: 0;
+        position: relative;
+        width: 90%;
+        max-width: 185px;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 20px;
+        box-shadow: 2px 2px 2px black;
+        display: block;
+    }
+}
